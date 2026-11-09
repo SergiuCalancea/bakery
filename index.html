@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spic de Aur — Brutărie artizanală</title>
+  <meta name="description" content="Pâine cu maia, croissante și cozonaci copți zilnic în cuptor cu vatră.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <svg class="logo__icon" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 36V10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <ellipse cx="14.5" cy="14" rx="4" ry="6.5" transform="rotate(-30 14.5 14)" fill="currentColor"/>
+          <ellipse cx="25.5" cy="14" rx="4" ry="6.5" transform="rotate(30 25.5 14)" fill="currentColor"/>
+          <ellipse cx="14.5" cy="24" rx="4" ry="6.5" transform="rotate(-30 14.5 24)" fill="currentColor"/>
+          <ellipse cx="25.5" cy="24" rx="4" ry="6.5" transform="rotate(30 25.5 24)" fill="currentColor"/>
+          <ellipse cx="20" cy="6" rx="3.4" ry="5.5" fill="currentColor"/>
+        </svg>
+        <span>Spic de Aur</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle__label" aria-label="Deschide meniul">
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#produse">Produse</a>
+        <a href="#despre">Despre noi</a>
+        <a href="#proces">Cum lucrăm</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn--small">Comandă</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Brutărie artizanală · din 2009</p>
+          <h1>Pâine adevărată,<br><em>coaptă cu răbdare.</em></h1>
+          <p class="hero__lead">
+            Maia naturală, făină măcinată la piatră și 24 de ore de dospire.
+            Scoatem prima tavă din cuptor la ora 6:30, în fiecare dimineață.
+          </p>
+          <div class="hero__actions">
+            <a href="#produse" class="btn">Vezi produsele</a>
+            <a href="#contact" class="btn btn--ghost">Precomandă</a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="hero__plate"></div>
+          <svg class="hero__bread" viewBox="0 0 320 220">
+            <defs>
+              <radialGradient id="crust" cx="45%" cy="35%" r="70%">
+                <stop offset="0%" stop-color="#E3A35E"/>
+                <stop offset="55%" stop-color="#B5652B"/>
+                <stop offset="100%" stop-color="#7A3E17"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="160" cy="200" rx="130" ry="14" fill="#2B1D14" opacity=".12"/>
+            <path d="M30 150 C30 70 90 35 160 35 C230 35 290 70 290 150 C290 185 250 198 160 198 C70 198 30 185 30 150Z" fill="url(#crust)"/>
+            <path d="M95 75 C115 95 120 120 112 150" stroke="#F3D3A2" stroke-width="7" stroke-linecap="round" fill="none" opacity=".85"/>
+            <path d="M150 60 C170 85 175 115 166 150" stroke="#F3D3A2" stroke-width="7" stroke-linecap="round" fill="none" opacity=".85"/>
+            <path d="M205 68 C225 92 230 120 220 150" stroke="#F3D3A2" stroke-width="7" stroke-linecap="round" fill="none" opacity=".85"/>
+            <circle cx="70" cy="120" r="2" fill="#F7F1E6" opacity=".6"/>
+            <circle cx="250" cy="110" r="2.5" fill="#F7F1E6" opacity=".6"/>
+            <circle cx="190" cy="175" r="2" fill="#F7F1E6" opacity=".6"/>
+          </svg>
+          <div class="hero__badge">
+            <strong>24h</strong>
+            <span>dospire lentă</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFICII ===== -->
+    <section class="perks">
+      <div class="container perks__inner">
+        <div class="perk">
+          <span class="perk__icon">🌾</span>
+          <div>
+            <h3>Maia naturală</h3>
+            <p>Fără drojdie industrială</p>
+          </div>
+        </div>
+        <div class="perk">
+          <span class="perk__icon">🔥</span>
+          <div>
+            <h3>Coaptă zilnic</h3>
+            <p>Cuptor cu vatră de piatră</p>
+          </div>
+        </div>
+        <div class="perk">
+          <span class="perk__icon">🧺</span>
+          <div>
+            <h3>Ingrediente locale</h3>
+            <p>Făină de la mori din zonă</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUSE ===== -->
+    <section class="section" id="produse">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Din cuptorul nostru</p>
+          <h2>Produsele zilei</h2>
+          <p>Coacem în tranșe mici, ca totul să ajungă proaspăt pe raft. Ce s-a terminat, revine mâine.</p>
+        </div>
+
+        <div class="products">
+          <article class="card">
+            <div class="card__img card__img--sourdough"><span></span></div>
+            <div class="card__body">
+              <div class="card__top">
+                <h3>Pâine cu maia</h3>
+                <span class="price">18 lei</span>
+              </div>
+              <p>Coajă crocantă, miez umed și aerat, gust ușor acrișor. 800 g.</p>
+              <span class="tag">Bestseller</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img card__img--croissant"><span></span></div>
+            <div class="card__body">
+              <div class="card__top">
+                <h3>Croissant cu unt</h3>
+                <span class="price">9 lei</span>
+              </div>
+              <p>27 de straturi de aluat foietat, unt franțuzesc, coacere aurie.</p>
+              <span class="tag tag--soft">Dimineața</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img card__img--cozonac"><span></span></div>
+            <div class="card__body">
+              <div class="card__top">
+                <h3>Cozonac cu nucă</h3>
+                <span class="price">55 lei</span>
+              </div>
+              <p>Rețeta bunicii: nucă, cacao și rahat. Frământat de mână.</p>
+              <span class="tag tag--soft">Weekend</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img card__img--rye"><span></span></div>
+            <div class="card__body">
+              <div class="card__top">
+                <h3>Pâine de secară</h3>
+                <span class="price">20 lei</span>
+              </div>
+              <p>70% secară integrală, semințe de chimen și coriandru.</p>
+              <span class="tag tag--green">Integral</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img card__img--cinnamon"><span></span></div>
+            <div class="card__body">
+              <div class="card__top">
+                <h3>Melc cu scorțișoară</h3>
+                <span class="price">11 lei</span>
+              </div>
+              <p>Aluat dospit, scorțișoară de Ceylon și glazură de cremă de brânză.</p>
+              <span class="tag tag--soft">Dulce</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img card__img--baguette"><span></span></div>
+            <div class="card__body">
+              <div class="card__top">
+                <h3>Baghetă tradițională</h3>
+                <span class="price">8 lei</span>
+              </div>
+              <p>Coajă subțire care trosnește, miez cu alveole mari. 250 g.</p>
+              <span class="tag">Clasic</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESPRE ===== -->
+    <section class="section section--alt" id="despre">
+      <div class="container about">
+        <div class="about__text">
+          <p class="eyebrow">Povestea noastră</p>
+          <h2>O brutărie mică, cu un cuptor mare</h2>
+          <p>
+            Am început în 2009, cu un singur cuptor și o maia primită de la o brutăreasă din Bucovina.
+            Aceeași maia o hrănim și astăzi, în fiecare zi.
+          </p>
+          <p>
+            Nu folosim amelioratori, conservanți sau premixuri. Doar făină, apă, sare și timp.
+            Multă vreme.
+          </p>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="signature">— Ana și Mihai, brutari</p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>17</strong>
+            <span>ani de coacere</span>
+          </div>
+          <div class="stat">
+            <strong>400+</strong>
+            <span>pâini pe zi</span>
+          </div>
+          <div class="stat">
+            <strong>4</strong>
+            <span>ingrediente de bază</span>
+          </div>
+          <div class="stat">
+            <strong>6:30</strong>
+            <span>prima tavă</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCES ===== -->
+    <section class="section" id="proces">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Cum lucrăm</p>
+          <h2>De la maia la masa ta</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3>Hrănim maiaua</h3>
+            <p>Seara, maiaua primește făină și apă proaspătă și se trezește peste noapte.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3>Frământăm</h3>
+            <p>Aluatul se lucrează încet, cu pauze, ca glutenul să se dezvolte natural.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3>Dospim lent</h3>
+            <p>Între 18 și 24 de ore la rece. De aici vin aroma și digestia ușoară.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3>Coacem pe vatră</h3>
+            <p>La 250°C, cu abur, pe piatră. Rezultatul: o coajă care cântă.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALE ===== -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <p class="eyebrow">Vecinii noștri spun</p>
+          <h2>Gustul care te aduce înapoi</h2>
+        </div>
+
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>„Cea mai bună pâine cu maia din oraș. Rezistă trei zile și tot e bună.”</p>
+            <footer>Elena M. · client din 2015</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>„Croissantul de sâmbătă dimineață a devenit tradiție în familia noastră.”</p>
+            <footer>Radu și Ioana</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>„Cozonacul de Crăciun se termină în prima zi. Comandați din timp!”</p>
+            <footer>Andrei P.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow">Te așteptăm</p>
+          <h2>Program și adresă</h2>
+
+          <ul class="hours">
+            <li><span>Luni – Vineri</span><span>07:00 – 19:00</span></li>
+            <li><span>Sâmbătă</span><span>07:00 – 15:00</span></li>
+            <li><span>Duminică</span><span>08:00 – 13:00</span></li>
+          </ul>
+
+          <div class="address">
+            <p><strong>Adresă:</strong> Str. Morii nr. 12, Cluj-Napoca</p>
+            <p><strong>Telefon:</strong> <a href="tel:+40700000000">0700 000 000</a></p>
+            <p><strong>Email:</strong> <a href="mailto:salut@spicdeaur.ro">salut@spicdeaur.ro</a></p>
+          </div>
+        </div>
+
+        <form class="form" action="#" method="post">
+          <h3>Precomandă</h3>
+          <p class="form__note">Comandă până la ora 18:00 și ridici a doua zi dimineață.</p>
+
+          <label>
+            Nume
+            <input type="text" name="nume" placeholder="Numele tău" required>
+          </label>
+          <label>
+            Telefon
+            <input type="tel" name="telefon" placeholder="07xx xxx xxx" required>
+          </label>
+          <label>
+            Produs
+            <select name="produs">
+              <option>Pâine cu maia</option>
+              <option>Croissant cu unt</option>
+              <option>Cozonac cu nucă</option>
+              <option>Pâine de secară</option>
+              <option>Melc cu scorțișoară</option>
+              <option>Baghetă tradițională</option>
+            </select>
+          </label>
+          <label>
+            Mesaj
+            <textarea name="mesaj" rows="3" placeholder="Cantitate, ora ridicării…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--full">Trimite comanda</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo logo--light">
+        <span>Spic de Aur</span>
+      </a>
+      <p>© 2026 Brutăria Spic de Aur. Copt cu drag, în fiecare zi.</p>
+      <div class="footer__links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
