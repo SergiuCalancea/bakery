@@ -1,46 +1,56 @@
-# Brutăria „Spic de Aur” — Design
+# Golden Wheat Bakery — Design
+
+![Golden Wheat — homepage](screenshots/desktop-hero.png)
 
 ## Concept
-O brutărie artizanală de cartier: pâine cu maia, coaptă în cuptor cu vatră, în fiecare dimineață.
-Tonul vizual e **cald, liniștit și meșteșugăresc**, ca hârtia de ambalaj, făina și coaja rumenită.
-Fără fotografii stock: ilustrațiile sunt făcute din SVG și CSS, așa că site-ul se încarcă rapid și arată unitar.
+A neighborhood artisan bakery: sourdough bread baked every morning in a stone-hearth oven.
+The visual tone is **warm, calm and handcrafted**, like kraft paper, flour and a golden crust.
+There are no stock photos. The illustrations are built with SVG and CSS, so the site loads fast and looks consistent.
 
-## Paletă de culori
-| Rol | Nume | Hex |
+## Color palette
+| Role | Name | Hex |
 |---|---|---|
-| Fundal principal | Făină | `#F7F1E6` |
-| Fundal secundar | Aluat | `#EFE4D0` |
-| Text principal | Espresso | `#2B1D14` |
-| Text secundar | Scoarță | `#6B5444` |
-| Accent principal | Coajă | `#B5652B` |
-| Accent secundar | Spic | `#D9A441` |
-| Accent rece | Salvie | `#7A8B6F` |
+| Main background | Flour | `#F7F1E6` |
+| Secondary background | Dough | `#EFE4D0` |
+| Main text | Espresso | `#2B1D14` |
+| Secondary text | Bark | `#6B5444` |
+| Primary accent | Crust | `#B5652B` |
+| Secondary accent | Wheat | `#D9A441` |
+| Cool accent | Sage | `#7A8B6F` |
 
-Regulă: accentul „Coajă” apare doar pe butoane, linkuri și prețuri, ca privirea să ajungă acolo.
+Rule: the Crust accent is used only for buttons, links and prices, so it draws the eye there.
 
-## Tipografie
-- **Titluri:** Fraunces (serif cu personalitate, amintește de etichetele tipărite vechi), greutate 600.
-- **Text:** Work Sans, 400 / 500, 17px de bază, line-height 1.65.
-- **Etichete mici:** Work Sans, majuscule, spațiere 0.14em.
+## Typography
+- **Headings:** Fraunces, weight 600. A serif with character that recalls old printed labels.
+- **Body:** Work Sans, 400 / 500, 17px base size, 1.65 line height.
+- **Small labels:** Work Sans, uppercase, 0.14em letter spacing.
 
-## Elemente vizuale
-- Colțuri rotunjite generoase (18–28px), ca o pâine.
-- Umbre moi, maro, nu gri.
-- Separatoare în formă de spic de grâu.
-- Textură subtilă de „făină” (puncte radiale) pe fundalul secțiunii hero.
+## Visual elements
+- Generous rounded corners (18–28px), like a loaf of bread.
+- Soft brown shadows instead of gray ones.
+- Wheat-ear dividers.
+- Subtle "flour dust" texture (radial dots) behind the hero section.
 
-## Structura paginii
-1. **Header:** logo, meniu (Produse, Despre, Program, Contact), buton „Comandă”
-2. **Hero:** titlu mare, subtitlu, două butoane, ilustrație SVG cu o pâine
-3. **Bandă de beneficii:** maia naturală · coaptă zilnic · ingrediente locale
-4. **Produse:** grilă de 6 carduri (ilustrație, nume, descriere, preț)
-5. **Despre noi:** poveste + statistici
-6. **Cum lucrăm:** 4 pași (de la maia la cuptor)
-7. **Testimoniale:** 3 citate
-8. **Program și contact:** orar, adresă și formular de precomandă
+## Page structure
+1. **Header:** logo, menu (Products, About us, How we bake, Contact), "Order" button
+2. **Hero:** large headline, subtitle, two buttons, SVG bread illustration
+3. **Perks strip:** natural sourdough · baked daily · local ingredients
+4. **Products:** grid of 6 cards (illustration, name, description, price)
+5. **About us:** our story plus a few stats
+6. **How we bake:** 4 steps, from starter to oven
+7. **Testimonials:** 3 quotes
+8. **Hours & contact:** opening hours, address and a pre-order form
 9. **Footer**
 
 ## Responsive
-- Desktop ≥ 960px: grile de 3 coloane, hero pe 2 coloane
-- Tabletă 640–960px: 2 coloane
-- Mobil < 640px: o coloană, meniu hamburger făcut doar din CSS (checkbox)
+- Desktop ≥ 960px: 3-column grids, 2-column hero
+- Tablet 640–960px: 2 columns
+- Mobile < 640px: single column, CSS-only hamburger menu (checkbox)
+
+## Screenshots
+
+### Desktop: full page
+![Full page on desktop](screenshots/desktop-full.png)
+
+### Mobile (390px)
+<img src="screenshots/mobile.png" alt="Mobile view" width="320">
